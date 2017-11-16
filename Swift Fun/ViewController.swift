@@ -3,7 +3,7 @@
 //  Swift Fun
 //
 //  Created by Brandon Garnreiter on 11/14/17.
-//  Copyright © 2017 Brandon Garnreiter. All rights reserved.
+//  Copyright © 2017 Brandon Garnreiter. All rights reserved..
 //
 
 import UIKit
@@ -21,11 +21,15 @@ class ViewController: UIViewController {
         
         if buttonCount >= 10 {
             view.backgroundColor = UIColor.blue
-            myLabel.text = "Nick is Cool"
+            myLabel.text = "You hit it more than 10 times!"
             
         }
+        if buttonCount >= 15 {
+            view.backgroundColor = UIColor.green
+            myLabel.text = "You hit it more than 15 times!"
+        }
         
-    
+    }
         // Do any additional setup after loading the view, typically from a nib.
 
 
