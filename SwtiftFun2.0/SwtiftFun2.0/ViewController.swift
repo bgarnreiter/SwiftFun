@@ -20,13 +20,29 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    
+    
     @IBOutlet weak var myLabel: UILabel!
     
     @IBAction func buttonHit(_ sender: Any) {
-    
-    let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
         
-      myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+    let addition = true
+    
+        if addition {
+            let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+            
+            myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        
+        } else{
+            
+            let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            
+            myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
+        }
+        
+    
     
     
     }
