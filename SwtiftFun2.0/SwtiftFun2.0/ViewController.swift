@@ -21,7 +21,11 @@ class ViewController: UIViewController {
     }
 
     
+<<<<<<< HEAD
     ////////////////////////////////////////////
+=======
+    
+>>>>>>> master
     
     
     @IBOutlet weak var myLabel: UILabel!
@@ -31,12 +35,17 @@ class ViewController: UIViewController {
     
     @IBAction func buttonHit(_ sender: Any) {
         
+<<<<<<< HEAD
     let addition = additionSwitch.isOn
+=======
+    let addition = true
+>>>>>>> master
     
         if addition {
             let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
             
             myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+<<<<<<< HEAD
         
         } else{
             
@@ -45,6 +54,16 @@ class ViewController: UIViewController {
             myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
         }
         
+=======
+        
+        } else{
+            
+            let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            
+            myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
+        }
+        
+>>>>>>> master
     
     
     
