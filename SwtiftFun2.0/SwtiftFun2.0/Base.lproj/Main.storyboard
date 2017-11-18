@@ -49,9 +49,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-tr-dqV">
-                                <rect key="frame" x="158" y="172" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-tr-dqV">
+                                <rect key="frame" x="163" y="172" width="51" height="31"/>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,7 +59,9 @@
                             <constraint firstItem="0XH-r2-MLn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D2B-eb-aFA"/>
                             <constraint firstItem="BI0-py-rwn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DrR-Om-jBu"/>
                             <constraint firstItem="0XH-r2-MLn" firstAttribute="top" secondItem="tsd-0v-4A6" secondAttribute="bottom" constant="21" id="Myy-5M-PLh"/>
+                            <constraint firstItem="tsd-0v-4A6" firstAttribute="top" secondItem="zRq-tr-dqV" secondAttribute="bottom" constant="19" id="QVI-LE-9ba"/>
                             <constraint firstItem="nmp-eq-0LG" firstAttribute="top" secondItem="0XH-r2-MLn" secondAttribute="bottom" constant="20" id="TGc-fh-imv"/>
+                            <constraint firstItem="zRq-tr-dqV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fiQ-ef-X84"/>
                             <constraint firstItem="BI0-py-rwn" firstAttribute="top" secondItem="nmp-eq-0LG" secondAttribute="bottom" constant="8" id="kc7-ct-KqX"/>
                             <constraint firstItem="tsd-0v-4A6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOz-M8-GvZ"/>
                             <constraint firstItem="nmp-eq-0LG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xHE-M1-8BM"/>
@@ -68,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="zRq-tr-dqV" id="jyy-OA-c5y"/>
                         <outlet property="bottomTextField" destination="0XH-r2-MLn" id="pq3-cW-Y3q"/>
                         <outlet property="myLabel" destination="nmp-eq-0LG" id="emx-9Y-FJJ"/>
                         <outlet property="topTextField" destination="tsd-0v-4A6" id="Aib-OD-Ukk"/>
